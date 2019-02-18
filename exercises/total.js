@@ -5,8 +5,13 @@
  * and return the total
  *
  */
-
-
+function total(arg){
+  let total = 0;
+  for(var i in arg){
+    total = total + arg[i];
+  }
+  return total;
+}
 //* Begin of tests
 const assert = require('assert')
 
